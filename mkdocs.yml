@@ -1,0 +1,40 @@
+nav:
+  - Home: index.md
+
+site_name: Flipper Zero Docs
+docs_dir: content
+repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
+edit_uri: https://github.com/Flipper-Zero/docs/edit/master/content/
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://flipperzero.one/discord
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/flipper_zero
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCfKVWB_pOfsY-HQ2siMBn6g
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/flipperzero
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/flipper_zero
+
+copyright: Copyright &copy; 2021 Flipper Devices Inc.
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+
+theme:
+  name: material
+  palette:
+    primary: deep orange
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
