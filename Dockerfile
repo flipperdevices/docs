@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material as builder
+FROM ghcr.io/squidfunk/mkdocs-material-insiders as builder
 COPY . /docs
 RUN mkdocs build
 
