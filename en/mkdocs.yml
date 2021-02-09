@@ -1,0 +1,68 @@
+nav:
+  - Welcome: index.md
+  - Usage:
+    - General:
+      - First Boot: usage/general/first-boot.md
+      - Rebooting: usage/general/rebooting.md
+      - Flashing Firmware: usage/general/flashing-firmware.md
+
+site_name: Flipper Zero Docs
+docs_dir: content
+site_url: https://doc.flipperzero.one/en/
+repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
+edit_uri: https://github.com/Flipper-Zero/docs/edit/master/content/
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://flipperzero.one/discord
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/flipper_zero
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCfKVWB_pOfsY-HQ2siMBn6g
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/flipperzero
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/flipper_zero
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Русский
+      link: /ru/
+      lang: ru
+
+copyright: Copyright &copy; 2021 Flipper Devices Inc.
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/icons
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+plugins:
+    - search
+    - macros
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: deep orange
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.expand

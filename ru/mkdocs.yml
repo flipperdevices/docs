@@ -1,14 +1,14 @@
 nav:
-  - Welcome: index.md
-  - Usage:
-    - General:
-      - First Boot: usage/general/first-boot.md
-      - Rebooting: usage/general/rebooting.md
-      - Flashing Firmware: usage/general/flashing-firmware.md
+  - Добро пожаловать: index.md
+  - Использование:
+    - Основное:
+      - Первое включение: usage/general/first-boot.md
+      - Перезагрузка: usage/general/rebooting.md
+      - Прошивка: usage/general/flashing-firmware.md
 
-site_name: Flipper Zero Docs
+site_name: Flipper Zero – Документация
 docs_dir: content
-site_url: https://doc.flipperzero.one/
+site_url: https://doc.flipperzero.one/ru/
 repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
 edit_uri: https://github.com/Flipper-Zero/docs/edit/master/content/
 
@@ -24,6 +24,13 @@ extra:
       link: https://facebook.com/flipperzero
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/flipper_zero
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Русский
+      link: /ru/
+      lang: ru
 
 copyright: Copyright &copy; 2021 Flipper Devices Inc.
 
@@ -50,6 +57,7 @@ plugins:
 
 theme:
   name: material
+  language: ru
   palette:
     primary: deep orange
   logo: assets/logo.png

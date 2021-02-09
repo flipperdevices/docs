@@ -70,7 +70,7 @@ dfu-util -a 0 -s 0x08000000 -D full_firmware_latest.bin
 !!! warning
     If you download the firmware from the link above, you will get a bundled binary, which consists of bootloader and firmware itself.
 
-    However, if you're trying to flash the firmware **without bootloader**, you must use `0x08008000` in `-s` parameter of `dfu-util`.
+    However, if you're trying to flash the firmware **without bootloader**, you must use `0x08008000` in `-s` parameter of `dfu-util`. You don't need this normally.
 
 ### Boot back
 
