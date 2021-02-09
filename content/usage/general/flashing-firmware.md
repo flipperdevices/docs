@@ -39,14 +39,28 @@ Choose your distro to install from package manager or [build from sources](http:
 
 ## Flashing firmware
 
-### Preparations
+### Download latest firmware build
 
-1. Click the image to download latest build of full firmware:
+Click the image to download latest build of full firmware:
 [![](https://update.flipperzero.one/latest-firmware-banner.png){: width="400"}](https://update.flipperzero.one/full_firmware_latest.bin)
-2. Connect your Flipper Zero to the PC over USB
-3. [Enter DFU Mode](switching-modes.md#dfu-mode) and check that the LED is blue
 
-### Uploading firmware
+### Enter DFU Mode
+
+DFU means Device Firmware Update.
+
+{{ gif("/assets/how-to-dfu.mp4") }}
+
+To enter DFU Mode:
+
+1. Press and hold :flp-btn-left: + :flp-btn-back:, just like for reboot, then wait a second
+2. Release :flp-btn-back:, but keep holding :flp-btn-left: for one more second
+3. Release :flp-btn-left:
+
+The display should turn off and the LED lights up in blue color, meaning you are in DFU Mode.
+
+Connect your Flipper Zero to the PC over USB.
+
+### Upload firmware
 
 Run this command in the terminal to upload new firmware:
 ``` sh
@@ -58,8 +72,8 @@ dfu-util -a 0 -s 0x08000000 -D full_firmware_latest.bin
 
     However, if you're trying to flash the firmware **without bootloader**, you must use `0x08008000` in `-s` parameter of `dfu-util`.
 
-### Booting back
+### Boot back
 
-After flashing the firmware, [reboot](switching-modes.md#reboot) to exit DFU mode.
+After flashing the firmware, [reboot](rebooting.md) to exit DFU mode.
 
 USB cable can be unplugged before or after rebooting.

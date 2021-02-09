@@ -2,7 +2,8 @@ nav:
   - Welcome: index.md
   - Usage:
     - General:
-      - Switching Modes: usage/general/switching-modes.md
+      - First Boot: usage/general/first-boot.md
+      - Rebooting: usage/general/rebooting.md
       - Flashing Firmware: usage/general/flashing-firmware.md
 
 site_name: Flipper Zero Docs
