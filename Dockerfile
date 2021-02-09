@@ -1,4 +1,5 @@
 FROM ghcr.io/squidfunk/mkdocs-material-insiders as builder
+RUN pip install mkdocs-macros-plugin
 COPY . /docs
 RUN mkdocs build
 

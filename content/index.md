@@ -1,4 +1,5 @@
-# Home
+Welcome to the Flipper Zero Docs.
 
-!!! tip "Check this out"
-	This is gonna be a gas!
+The main page is still in a WIP state.
+
+Use tabs and sidebar to navigate.

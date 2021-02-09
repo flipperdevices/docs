@@ -1,8 +1,13 @@
 nav:
-  - Home: index.md
+  - Welcome: index.md
+  - Usage:
+    - General:
+      - Switching Modes: usage/general/switching-modes.md
+      - Flashing Firmware: usage/general/flashing-firmware.md
 
 site_name: Flipper Zero Docs
 docs_dir: content
+site_url: https://doc.flipperzero.one/
 repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
 edit_uri: https://github.com/Flipper-Zero/docs/edit/master/content/
 
@@ -26,6 +31,21 @@ markdown_extensions:
       permalink: true
   - abbr
   - admonition
+  - attr_list
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/icons
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+plugins:
+    - search
+    - macros
 
 theme:
   name: material
@@ -36,5 +56,4 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-    - navigation.tabs
-    - navigation.sections
+    - navigation.expand
