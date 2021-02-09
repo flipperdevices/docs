@@ -37,6 +37,7 @@ copyright: Copyright &copy; 2021 Flipper Devices Inc.
 markdown_extensions:
   - toc:
       permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
   - abbr
   - admonition
   - attr_list
