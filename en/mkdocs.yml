@@ -10,7 +10,7 @@ site_name: Flipper Zero Docs
 docs_dir: content
 site_url: https://doc.flipperzero.one/en/
 repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
-edit_uri: https://github.com/Flipper-Zero/docs/edit/master/content/
+edit_uri: https://github.com/Flipper-Zero/docs/edit/master/en/content/
 
 extra:
   social:
