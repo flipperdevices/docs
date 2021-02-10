@@ -10,10 +10,10 @@ def define_env(env):
   def gif(url):
       if not is_absolute(url):
           url = urljoin(env.conf['site_url'], url)
-      return '<video autoplay muted loop playsinline style="width: 60%"> <source src="' + url + '" type="video/mp4"></video>'
+      return '<video autoplay muted loop playsinline style="width: 100%"> <source src="' + url + '" type="video/mp4"></video>'
 
   @env.macro
   def video(url):
       if not is_absolute(url):
           url = urljoin(env.conf['site_url'], url)
-      return '<video controls style="width: 60%"> <source src="' + url + '" type="video/mp4"></video>'
+      return '<video controls style="width: 100%"> <source src="' + url + '" type="video/mp4"></video>'
