@@ -31,6 +31,7 @@ extra:
     - name: Русский
       link: /ru/
       lang: ru
+  remark: docs-ru
 
 copyright: Copyright &copy; 2021 Flipper Devices Inc.
 
@@ -58,6 +59,7 @@ plugins:
 
 theme:
   name: material
+  custom_dir: overrides
   language: ru
   palette:
     primary: deep orange
