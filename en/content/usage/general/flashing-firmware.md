@@ -22,7 +22,7 @@ brew install dfu-util
 
 ### Linux
 
-Choose your distro to install from package manager or [build from sources](http://dfu-util.sourceforge.net/build.html).
+Choose your distro to install from the package manager or [build from sources](http://dfu-util.sourceforge.net/build.html).
 
 === "Ubuntu/Debian"
     ``` sh
@@ -56,7 +56,7 @@ To enter DFU Mode:
 2. Release :flp-btn-back:, but keep holding :flp-btn-left: for one more second
 3. Release :flp-btn-left:
 
-The display should turn off and the LED lights up in blue color, meaning you are in DFU Mode.
+The display should turn off, and the LED lights up in blue color, meaning you are in DFU Mode.
 
 Connect your Flipper Zero to the PC over USB.
 
@@ -76,4 +76,4 @@ dfu-util -a 0 -s 0x08000000 -D full_firmware_latest.bin
 
 After flashing the firmware, [reboot](rebooting.md) to exit DFU mode.
 
-USB cable can be unplugged before or after rebooting.
+The USB cable can be unplugged before or after rebooting.
