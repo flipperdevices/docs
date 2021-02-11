@@ -8,7 +8,7 @@ nav:
 
 site_name: Flipper Zero Docs
 docs_dir: content
-site_url: https://doc.flipperzero.one/en/
+site_url: https://docs.flipperzero.one/en/
 repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
 edit_uri: https://github.com/Flipper-Zero/docs/edit/master/en/content/
 
