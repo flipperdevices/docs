@@ -35,6 +35,9 @@ extra:
 
 copyright: Copyright &copy; 2021 Flipper Devices Inc.
 
+tag_manager: !!python/object/apply:os.getenv ["GOOGLE_TAG_MANAGER_TOKEN"]
+google_analytics: !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_TOKEN"]
+
 markdown_extensions:
   - toc:
       permalink: true
@@ -65,6 +68,8 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   icon:
-    repo: fontawesome/brands/github
+    logo: material/library
+    repo: fontawesome/brands/github-alt
   features:
-    - navigation.expand
+    - navigation.tabs
+    - navigation.sections
