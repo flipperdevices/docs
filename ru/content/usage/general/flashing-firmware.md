@@ -18,29 +18,29 @@
 Переводим Flipper One в режим DFU и подключаем к ПК.
 
 В диспетчере устройств наш Flipper One отображается, как `DFU in FS Mode` и для него необходимо установить драйвер.
-![](assets/1-win-ru-deviceManager.png)
+![](/assets/1-win-ru-deviceManager.png)
 
 Идём в Центр обновления Windows -> Посмотреть необязательные обновления.
-![](assets/2-win-ru-checkingUpdate.png)
+![](/assets/2-win-ru-checkingUpdate.png)
 
 Находим драйвер `STMicroelectronics`, отмечаем галочкой и нажимаем «Загрузить».
-![](assets/3-win-ru-chooseDriver.png)
+![](/assets/3-win-ru-chooseDriver.png)
 
 После загрузки и установки драйвера название в диспетчере устройств изменится на `STM Device in DFU Mode`.
 Иногда может потребоваться перезагрузка ПК.
-![](assets/4-win-ru-checkDevice.png)
+![](/assets/4-win-ru-checkDevice.png)
 
 Теперь нам необходимо установить и запустить скачанный ранее DfuSeDemo.
 В окне программы вверху справа убедимся, что выбранно устройство `STM Device in DFU Mode`.
 Далее в таблице выбираем раздел для установки прошивки `00  Internal Flash  256 sectors…`.
 После нажимаем кнопку «Choose» внизу окна программы и выбираем скачанный файл прошивки.
-![](assets/6-win-ru-chooseFirm.png)
+![](/assets/6-win-ru-chooseFirm.png)
 
 Перепроверяем, что выбран раздел `00  Internal Flash  256 sectors…`, нажимаем `Upgrade` и во всплывающем окне нажимаем «Да».
-![](assets/7-win-ru-flashFirm.png)
+![](/assets/7-win-ru-flashFirm.png)
 
 После появления сообщения об успешной прошивке, отключаем и перезагружаем Flipper.
-![](assets/9-win-ru-doneReboot.png)
+![](/assets/9-win-ru-doneReboot.png)
 
 ### macOS
 
