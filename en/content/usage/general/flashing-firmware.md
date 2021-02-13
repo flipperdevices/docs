@@ -18,29 +18,29 @@ It’s completely free, you just need to register during downloading process.
 
 On Flipper enter in DFU mode and connect to PC.
 As you can see our Flipper One named as `DFU in FS Mode` and wee need to install compatible driver.
-![](assets/1-win-en.png)
+![](../../assets/1-win-en.png)
 
 Go to Windows Update Centre -> View optional updates.
 ![](assets/2-win-en.png)
 
 Find `STMicroelectronics` in driver updates, mark it and press “Download and install”.
-![](assets/3-win-en.png)
+![](../../assets/3-win-en.png)
 
 Check in Device Manager that name of the device has already changed to «STM Device in DFU Mode».
 In some cases, reboot is required.
-![](assets/4-win-en.png)
+![](../../assets/4-win-en.png)
 
 Now it’s time to install and run DfuSeDemo.
 You can select our device `STM Device in DFU Mode` in top section of the app. 
 After that choose `00  Internal Flash  256 sectors…` section in targets table.
 Next click `Choose` in the bottom of the window and find firmware file.
-![](assets/5-win-en.png)
+![](../../assets/5-win-en.png)
 
 After all preperations press Upgrade and click “Yes” in pop-up window.
-![](assets/6-win-en.png)
+![](../../assets/6-win-en.png)
 
 Reboot Flipper after successful upgrade. Done!
-![](assets/6-win-en.png)
+![](../../assets/6-win-en.png)
 
 ### macOS
 
