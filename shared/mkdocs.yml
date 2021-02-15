@@ -21,6 +21,9 @@ extra:
       link: /ru/
       lang: ru
 
+extra_javascript:
+  - javascripts/extra.js
+
 copyright: Copyright &copy; 2021 Flipper Devices Inc.
 
 markdown_extensions:
@@ -54,6 +57,7 @@ theme:
   icon:
     logo: material/library
     repo: fontawesome/brands/github-alt
+    translate: material/web
   features:
     - navigation.tabs
     - navigation.sections
