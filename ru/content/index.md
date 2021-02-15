@@ -1,3 +1,10 @@
+---
+template: home.html
+hide:
+    - navigation
+    - toc
+---
+
 Добро пожаловать в документацию Flipper Zero.
 
 Главная страница пока в разработке.
