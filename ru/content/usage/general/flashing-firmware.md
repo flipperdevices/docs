@@ -66,7 +66,7 @@ DFU означает Device Firmware Update.
 
 ![](../../assets/flashing-firmware/dfuse-upgrade.png)
 
-После успешной прошивки] [перезагрузите](rebooting.md) Flipper Zero.
+После успешной прошивки [перезагрузите](rebooting.md) Flipper Zero.
 
 ## Прошивка в macOS/Linux
 

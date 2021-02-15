@@ -108,8 +108,6 @@ Run this command in the terminal to upload new firmware:
 dfu-util -a 0 -D full.dfu
 ```
 
-### Boot back
-
 After flashing the firmware, [reboot](rebooting.md) to exit DFU mode.
 
 The USB cable can be unplugged before or after rebooting.
