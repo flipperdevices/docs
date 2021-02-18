@@ -1,5 +1,5 @@
 docs_dir: content
-repo_url: https://github.com/Flipper-Zero/flipperzero-firmware-community
+repo_url: https://github.com/Flipper-Zero/docs
 
 extra:
   social:
@@ -44,8 +44,9 @@ markdown_extensions:
   - pymdownx.tabbed
 
 plugins:
-    - search
-    - macros
+  - search
+  - git-revision-date-localized
+  - macros
 
 theme:
   name: material

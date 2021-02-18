@@ -2,11 +2,12 @@ FROM ghcr.io/squidfunk/mkdocs-material-insiders as builder
 
 RUN apk add yq rsync --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 
-RUN pip install mkdocs-macros-plugin
+RUN pip install mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin
 
 COPY shared /docs/shared
 COPY en /docs/en
 COPY ru /docs/ru
+COPY .git /docs/.git
 
 WORKDIR /docs/en
 RUN rsync -a --exclude mkdocs.yml ../shared/ . && \ 
