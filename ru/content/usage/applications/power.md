@@ -9,9 +9,9 @@
 ## Обзор
 
 === "Без зарядки"
-    {{ screenshot("../../assets/applications/power-charging-off.png") }}
+    {{ screenshot("/assets/applications/power-charging-off.png") }}
 === "При зарядке"
-    {{ screenshot("../../assets/applications/power-charging-on.png") }}
+    {{ screenshot("/assets/applications/power-charging-on.png") }}
 
 ### Current
 

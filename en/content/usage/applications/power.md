@@ -9,9 +9,9 @@ Power state application obtains information from these ICs and shows it on displ
 ## Review
 
 === "Not charging"
-    {{ screenshot("../../assets/applications/power-charging-off.png") }}
+    {{ screenshot("/assets/applications/power-charging-off.png") }}
 === "Charging"
-    {{ screenshot("../../assets/applications/power-charging-on.png") }}
+    {{ screenshot("/assets/applications/power-charging-on.png") }}
 
 ### Current
 
