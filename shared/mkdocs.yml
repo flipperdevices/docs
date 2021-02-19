@@ -1,5 +1,6 @@
 docs_dir: content
 repo_url: https://github.com/Flipper-Zero/docs
+repo_name: flipper-zero/docs
 
 extra:
   social:

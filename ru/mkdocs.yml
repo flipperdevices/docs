@@ -5,6 +5,8 @@ nav:
       - Первое включение: usage/general/first-boot.md
       - Перезагрузка: usage/general/rebooting.md
       - Прошивка: usage/general/flashing-firmware.md
+    - Приложения:
+      - Power: usage/applications/power.md
 
 site_name: Flipper Zero — Документация
 site_url: https://docs.flipperzero.one/ru/
