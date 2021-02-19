@@ -8,7 +8,10 @@
 
 ## Обзор
 
-![](../../assets/applications/power-state-screenshot.png)
+=== "Без зарядки"
+    {{ screenshot("/assets/applications/power-charging-off.png") }}
+=== "При зарядке"
+    {{ screenshot("/assets/applications/power-charging-on.png") }}
 
 ### Current
 

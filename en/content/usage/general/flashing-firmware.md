@@ -7,7 +7,7 @@ Click the image to download latest build of full firmware:
 
 DFU means Device Firmware Update.
 
-{{ gif("../../assets/how-to-dfu.mp4") }}
+{{ gif("/assets/how-to-dfu.mp4") }}
 
 To enter DFU Mode:
 
