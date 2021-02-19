@@ -22,7 +22,7 @@ Documents are written in Markdown. [Material for Mkdocs](https://squidfunk.githu
 
 All images, videos, and other assets must be uploaded to the `assets` folder.
 
-### GIFs and Videos
+### GIFs, Videos and screenshots
 
 We have some custom macros to embed "gifs" and videos.
 
@@ -35,6 +35,13 @@ To embed a video, use:
 ```
 {{ video("/assets/example-video-file-name.mp4") }}
 ```
+
+To embed a Flipper Zero screenshot, use:
+```
+{{ screenshot("/assets/example-screenshot.png") }}
+```
+
+The screenshot should be 128*64 PNG with transparent background.
 
 ## Building the docs locally
 
