@@ -1,18 +1,45 @@
-Flipper has power management system, that mainly consist of two special IC: Fuel gauge and charger.
-Main goal of first IC is to moitor the charge level of battery. Its realized through precise calculations of energy, that going to battery and spent from battery.
-Charger IC needed for control of charge process, that very important for battery life and user health.
+Flipper Zero has a power management system, which mainly consists of **fuel gauge** and **charger** ICs.
+
+The main goal of the fuel gauge is to monitor the battery charging level. It works by calculating the incoming and spent energy precisely.
+
+Charger IC controls the charging process, which is very important for battery life and user safety.
+
+Power state application obtains information from these ICs and shows it on display. Let's examine each line of that information.
+
+## Review
 
 ![](../../assets/applications/power-state-screenshot.png)
 
-Power state application obtains information from these ICs and shows it on display. Let's figure out, what it means.
+### Current
 
-In first line (Current) first value is current, reported by fuel gauge (consumed by battery). If Flipper is not connected to power supply (charge process not going on) that we'll get negative value here. It means Flipper own consumption current (calculated on battery circuit) at the moment. Second value is charge currnet, reported by charger IC. After the start of charging there will be a non-zero value.
+The first value is current, reported by fuel gauge (consumed by the battery). While Flipper is not charging, the value is negative and shows current consumption.
 
-Next line (Voltage) contains voltage levels on battery circuit, respectively recieved from fuel gauge and charger. Please note, that last value will be correct only during charge process.
+The second value is the charging current, reported by the charger IC. It goes up as the charging starts.
 
-Third line (Charge) is current charge level of battery. It calculated by fuel gauge using amount of energy, that has been consumed by battery during charge and spent from during the device usage.
+### Voltage
 
-Further located values of current capacity and full capacity of battery. First one can be correctly calculated only if actual battery has the same value of full capacity (second value), as used during fuel gauge calibration.
+This line shows current voltage levels: from the fuel gauge and from the charger respectively.
 
-Last line contains temperature of the fuel gauge IC and temperature of the device battery respectively in Celsius degrees. Battery temperature measured by NTC-thermistor, located on the battery.
+!!! warning
+    Voltage level given by the charger is correct only during the charging process.
 
+### Charge
+
+The current battery level is shown on this line in percentage.
+
+It's calculated by the fuel gauge using the value of energy consumed by the battery during charging, and spent during the device usage.
+
+### Capacity
+
+First value on this line shows energy left in the battery, and the second one shows its full capacity.
+
+Remaining energy can be calculated correctly only if the installed battery has the same full capacity value that was set during fuel gauge calibration.
+
+!!! warning
+    As seen on the screenshot above, some testing units might report that the full capacity is 3000 mAh, which is wrong and leads to battery level miscalculations. The real capacity is 2000 mAh.
+
+### Temperature
+
+Last line shows the fuel gauge and the battery Celsius temperatures respectively.
+
+The battery temperature is measured using NTC thermistor, which is placed on the battery and connected to the charger IC. It changes its resistance depending on the temperature.
