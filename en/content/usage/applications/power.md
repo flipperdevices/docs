@@ -24,7 +24,7 @@ The second value is the charging current, reported by the charger IC. It goes up
 This line shows current voltage levels: from the fuel gauge and from the charger respectively.
 
 !!! warning
-    Voltage level given by the charger is correct only during the charging process.
+    The voltage level given by the charger is correct only during the charging process.
 
 ### Charge
 
@@ -34,15 +34,15 @@ It's calculated by the fuel gauge using the value of energy consumed by the batt
 
 ### Capacity
 
-First value on this line shows energy left in the battery, and the second one shows its full capacity.
+The first value on this line shows energy left in the battery, and the second one shows its full capacity.
 
-Remaining energy can be calculated correctly only if the installed battery has the same full capacity value that was set during fuel gauge calibration.
+The remaining energy can be calculated correctly only if the installed battery has the same full capacity value that was set during fuel gauge calibration.
 
 !!! warning
     As seen on the screenshot above, some testing units might report that the full capacity is 3000 mAh, which is wrong and leads to battery level miscalculations. The real capacity is 2000 mAh.
 
 ### Temperature
 
-Last line shows the fuel gauge and the battery Celsius temperatures respectively.
+The last line shows the fuel gauge and the battery Celsius temperatures respectively.
 
 The battery temperature is measured using NTC thermistor, which is placed on the battery and connected to the charger IC. It changes its resistance depending on the temperature.
