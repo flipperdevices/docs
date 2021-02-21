@@ -6,11 +6,20 @@ import tempfile
 import sys
 import subprocess
 
+import tornado.web
+
 from os.path import isfile, join
+
 from mkdocs.commands.build import build
 from mkdocs.config import load_config
 
 log = logging.getLogger('mkdocs')
+log.propagate = False
+stream = logging.StreamHandler()
+formatter = logging.Formatter("%(levelname)-7s -  %(message)s ")
+stream.setFormatter(formatter)
+log.addHandler(stream)
+log.setLevel(logging.INFO)
 
 
 def _init_asyncio_patch():
@@ -25,13 +34,12 @@ def _init_asyncio_patch():
                 asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())
 
 
-def _get_handler(site_dir, StaticFileHandler):
+def _get_handler(site_dir, handler):
     from tornado.template import Loader
 
-    class WebHandler(StaticFileHandler):
+    class WebHandler(handler):
 
         def write_error(self, status_code, **kwargs):
-
             if status_code in (404, 500):
                 error_page = '{}.html'.format(status_code)
                 if isfile(join(site_dir, error_page)):
@@ -42,6 +50,14 @@ def _get_handler(site_dir, StaticFileHandler):
     return WebHandler
 
 
+def _get_redirect_handler(language):
+    class RedirectHandler(tornado.web.RequestHandler):
+        def get(self, path):
+            self.redirect(os.path.join('/' + language, path))
+
+    return RedirectHandler
+
+
 def _livereload(host, port, languages, builder, site_dir):
     # We are importing here for anyone that has issues with livereload. Even if
     # this fails, the --no-livereload alternative should still work.
@@ -50,11 +66,21 @@ def _livereload(host, port, languages, builder, site_dir):
     import livereload.handlers
 
     class LiveReloadServer(Server):
+        def _setup_logging(self):
+            logger = logging.getLogger('livereload')
+            logger.setLevel(logging.INFO)
+            return
 
         def get_web_handlers(self, script):
-            handlers = super().get_web_handlers(script)
-            # replace livereload handler
-            return [(handlers[0][0], _get_handler(site_dir, livereload.handlers.StaticFileHandler), handlers[0][2],)]
+            handlers = []
+            for lang in languages:
+                handlers.append((fr'/{lang}/(.*)',
+                                 _get_handler(os.path.join(site_dir, lang), livereload.handlers.StaticFileHandler), {
+                                     'path': os.path.join(site_dir, lang),
+                                     'default_filename': self.default_filename,
+                                 }))
+            handlers.append((r'/(.*)', _get_redirect_handler(languages[0])))
+            return handlers
 
     server = LiveReloadServer()
 
@@ -90,8 +116,6 @@ def pre_build(language, out):
 def serve(host, port, languages):
     docs_dir = tempfile.mkdtemp(prefix='mkdocs_')
     site_dir = tempfile.mkdtemp(prefix='mkdocs_out_')
-    log.info(f'Merged sources: {docs_dir}')
-    log.info(f'Built site: {site_dir}')
 
     def builder(lang):
         log.info(f'Building {lang}...')
@@ -106,9 +130,22 @@ def serve(host, port, languages):
             site_dir=os.path.join(site_dir, lang)
         )
 
-        config['site_url'] = f'http://{host}:{port}/' + lang + '/'
+        config['site_url'] = f'http://{host}:{port}/{lang}/'
+
+        # mkdocs is usually launched from the docs root directory, so it doesn't resolve relative paths smart enough,
+        # leading to some bugs when launched from another place.
+        # For example, custom_icons don't work without this dirty hack, and our neat Flipper buttons fail to load :(
+        # I could've filled an issue to mkdocs-material-extensions regarding this, but I believe it's more reliable
+        # to just switch the working directory, cause there might be other features that rely on it.
+        #
+        # It was kinda hard to figure this out, and it's actually 9 AM right now and I haven't slept yet, so please
+        # satisfy my praise kink by saying 'good girl' telepathically
+        cwd = os.getcwd()
+        os.chdir(lang_path)
 
         build(config, live_server=True, dirty=False)
+
+        os.chdir(cwd)
 
     try:
         for lang in languages:
@@ -120,13 +157,4 @@ def serve(host, port, languages):
 
 
 if __name__ == '__main__':
-    log.propagate = False
-    stream = logging.StreamHandler()
-    formatter = logging.Formatter("%(levelname)-7s -  %(message)s ")
-    stream.setFormatter(formatter)
-    log.addHandler(stream)
-    log.setLevel(logging.INFO)
-
-    logging.getLogger('tornado').setLevel(logging.WARNING)
-
     serve('localhost', 8000, ['en', 'ru'])
