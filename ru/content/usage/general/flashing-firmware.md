@@ -7,7 +7,7 @@
 
 DFU означает Device Firmware Update.
 
-{{ gif("/assets/how-to-dfu.mp4") }}
+{{ gif("assets/how-to-dfu.mp4") }}
 
 Чтобы войти в режим DFU:
 

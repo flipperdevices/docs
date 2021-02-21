@@ -45,15 +45,17 @@ The screenshot should be 128*64 PNG with transparent background.
 
 ## Building the docs locally
 
-There is currently no easy way to build and test docs locally, unfortunately.
-
-Because of i18n and the custom `shared` folder with mergeable configs and assets, it's impossible to use `mkdocs build` and `mkdocs serve` out of the box.
-
-We're working on a simple solution which will allow building the docs locally with live reload.
-
-As for now, you can try using docker:
+1. Install additional utilities somehow: `yq`, `rsync`.
+2. Install packages:
 ```
-docker build -t docs . && docker run --rm -it -p 8888:80 docs
+pip3 install mkdocs-material mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin
 ```
+3. Run `python3 ./serve.py` being in the root directory
+4. Proceed to `http://localhost:8000`
 
-The docs should be live at `localhost:8888` after that.
+**P.S. The site might look a bit different to production, because we use [mkdocs-material-insiders](https://squidfunk.github.io/mkdocs-material/insiders/), which you obviously can't install.**
+
+If you want to test docs better and have access to Insiders, install it:
+```
+pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+```
