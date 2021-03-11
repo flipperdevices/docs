@@ -19,6 +19,8 @@
 ## Схема
 
 <script src="https://viewer.altium.com/client/static/js/embed.js"></script>
-<div class="altium-ecad-viewer" data-project-src="0ec64b13-433d-419c-8d70-d2e84bef7532" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;">Devoard StlinkV3 Schematic</div>
+<div class="altium-ecad-viewer" data-project-src="0ec64b13-433d-419c-8d70-d2e84bef7532" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;">Devboard StlinkV3 Schematic</div>
 
 ## Исходники проекта в Alitum
+
+[github.com/Flipper-Zero/flipperzero-devboard-stlinkv3](https://github.com/Flipper-Zero/flipperzero-devboard-stlinkv3)  
