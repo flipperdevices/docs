@@ -7,6 +7,9 @@ nav:
       - Прошивка: usage/general/flashing-firmware.md
     - Приложения:
       - Power: usage/applications/power.md
+  - Рaзработка:
+    - Железо:
+      - Отладочная плата: development/hardware/devboard-stlinkV3.md
 
 site_name: Flipper Zero — Документация
 site_url: https://docs.flipperzero.one/ru/
