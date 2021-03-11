@@ -157,4 +157,4 @@ def serve(host, port, languages):
 
 
 if __name__ == '__main__':
-    serve('172.25.26.244', 8000, ['en', 'ru'])
+    serve('localhost', 8000, ['en', 'ru'])
