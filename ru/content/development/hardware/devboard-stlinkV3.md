@@ -1,3 +1,4 @@
+
 # Отладочная плата для Flipper Zero на базе ST-Link V3
 
 ![Flipper Zero Devboard with Stlink V3 ](https://cdn.flipperzero.one/devboard-stlinkv3.png)
@@ -13,3 +14,11 @@
 * ST-Link V3 Mini для прошивки и внутрисистемной отладки
 * Встроенный UART to USB подключенный к UART во Flipper Zero (GPIO 13, 14)
 * Выводы неиспользуемых GPIO во Flipper Zero для отладки и макетирования
+
+
+## Схема
+
+<script src="https://viewer.altium.com/client/static/js/embed.js"></script>
+<div class="altium-ecad-viewer" data-project-src="0ec64b13-433d-419c-8d70-d2e84bef7532" style="border-radius: 0px 0px 4px 4px; height: 500px; border-style: solid; border-width: 1px; border-color: rgb(241, 241, 241); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;">Devoard StlinkV3 Schematic</div>
+
+## Исходники проекта в Alitum
