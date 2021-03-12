@@ -7,6 +7,9 @@ nav:
       - Flashing Firmware: usage/general/flashing-firmware.md
     - Applications:
       - Power: usage/applications/power.md
+  - Development:
+    - Hardware:
+      - Developer Board: development/hardware/devboard-stlinkV3.md
 
 site_name: Flipper Zero — Documentation
 site_url: https://docs.flipperzero.one/en/
