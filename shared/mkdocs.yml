@@ -54,7 +54,7 @@ theme:
   custom_dir: overrides
   palette:
     primary: deep orange
-  logo: assets/logo.png
+  logo: assets/logo.svg
   favicon: assets/favicon.png
   icon:
     logo: material/library

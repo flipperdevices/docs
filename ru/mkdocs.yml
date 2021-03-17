@@ -4,12 +4,16 @@ nav:
     - Основное:
       - Первое включение: usage/general/first-boot.md
       - Перезагрузка: usage/general/rebooting.md
-      - Прошивка: usage/general/flashing-firmware.md
+      - Обновление прошивки: usage/general/flashing-firmware.md
     - Приложения:
       - Power: usage/applications/power.md
   - Рaзработка:
     - Железо:
+      - Принципиальные схемы: development/hardware/schematic.md
       - Отладочная плата: development/hardware/devboard-stlinkV3.md
+    - Механика:
+      - Чертежи: development/mechanics/mechanics.md
+    
 
 site_name: Flipper Zero — Документация
 site_url: https://docs.flipperzero.one/ru/
