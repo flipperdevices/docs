@@ -4,7 +4,7 @@
 These are circuit diagrams of all Flipper Zero PCBs. They could be useful for hardware module developers and for low-level debug. These schematics are for educational purposes only and can't be treated as production documentation.
 
 !!! warning "Schematics are stripped"
-    **All Flipper Zero schematics** are published below, but nominals of some passive components are ommited to complicate device cloning before official release.
+    **All Flipper Zero schematics** are published below, but values of some passive components are ommited to complicate device cloning before official release.
 
 ## Main PCB
 ![Flipper Zero Main PCB](https://cdn.flipperzero.one/flipperzero-main-pcb-preview.jpg)
