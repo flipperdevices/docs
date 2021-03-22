@@ -9,7 +9,10 @@ nav:
       - Power: usage/applications/power.md
   - Development:
     - Hardware:
+      - Circuit Diagrams: development/hardware/schematic.md
       - Developer Board: development/hardware/devboard-stlinkV3.md
+    - Mechanics:
+      - Blueprints: development/mechanics/blueprints.md
 
 site_name: Flipper Zero — Documentation
 site_url: https://docs.flipperzero.one/en/

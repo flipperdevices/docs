@@ -12,7 +12,7 @@ nav:
       - Принципиальные схемы: development/hardware/schematic.md
       - Отладочная плата: development/hardware/devboard-stlinkV3.md
     - Механика:
-      - Чертежи: development/mechanics/mechanics.md
+      - Чертежи: development/mechanics/blueprints.md
     
 
 site_name: Flipper Zero — Документация

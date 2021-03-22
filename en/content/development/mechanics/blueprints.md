@@ -1,7 +1,5 @@
-# Механические чертежи
-
-
-# Внешний модуль без корпуса
+# Mechanical Blueprints
+## Uncased External Module
 
 ![](https://cdn.flipperzero.one/FlipperZero-ext-module-secA.png)
 
