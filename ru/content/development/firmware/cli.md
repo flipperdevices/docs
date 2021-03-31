@@ -4,7 +4,7 @@
 
 Соедините Flipper Zero с компьютером с помощью USB-кабеля. Ваш хост определит виртуальный COM-порт:
 
-![](../../assets/firmware/vcp.png){width="300px"}
+![](../../assets/firmware/vcp.png)
 
 Этот COM-порт не требует специального драйвера и доступен на всех современных операционных системах.
 
@@ -12,7 +12,7 @@
 
 В macOS, например, название такого порта будет начинаться на `/dev/tty.usbmodem`:
 
-![](../../assets/firmware/vcp-usbmodem.png){width="300px"}
+![](../../assets/firmware/vcp-usbmodem.png)
 
 В нашем примере это `/dev/tty.usbmodem2069315E544E1`.
 

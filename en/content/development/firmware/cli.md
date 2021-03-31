@@ -4,7 +4,7 @@ Flipper Zero has its own command line interface, which might be useful for autom
 
 Connect your Flipper Zero to the PC over USB. Your host will detect a virtual COM-port:
 
-![](../../assets/firmware/vcp.png){width="300px"}
+![](../../assets/firmware/vcp.png)
 
 This COM-port does not require a special driver and is accessible on most modern operating systems.
 
@@ -12,7 +12,7 @@ You will need any terminal client to open the port: `screen`, `minicom`, etc. No
 
 For example, the port name in macOS starts with `/dev/tty.usbmodem`:
 
-![](../../assets/firmware/vcp-usbmodem.png){width="300px"}
+![](../../assets/firmware/vcp-usbmodem.png)
 
 It is `/dev/tty.usbmodem2069315E544E1` in our case.
 
