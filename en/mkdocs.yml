@@ -8,6 +8,8 @@ nav:
     - Applications:
       - Power: usage/applications/power.md
   - Development:
+    - Firmware:
+      - Command Line Interface: development/firmware/cli.md
     - Hardware:
       - Circuit Diagrams: development/hardware/schematic.md
       - Developer Board: development/hardware/devboard-stlinkV3.md

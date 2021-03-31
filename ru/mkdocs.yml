@@ -8,6 +8,8 @@ nav:
     - Приложения:
       - Power: usage/applications/power.md
   - Рaзработка:
+    - Прошивка:
+      - Командная строка: development/firmware/cli.md
     - Железо:
       - Принципиальные схемы: development/hardware/schematic.md
       - Отладочная плата: development/hardware/devboard-stlinkV3.md
