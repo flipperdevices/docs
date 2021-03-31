@@ -18,7 +18,7 @@ RUN mkdocs build -s
 
 WORKDIR /docs/ru
 RUN rsync -a --exclude mkdocs.yml ../shared/ . && \ 
-    yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' ../shared/mkdocs.yml mkdocs.yml > mkdocs.yml.tmp && \
+    yq eval-all 'select(fileIndex == 0) *d select(fileIndex == 1)' ../shared/mkdocs.yml mkdocs.yml > mkdocs.yml.tmp && \
     rm mkdocs.yml && \
     mv mkdocs.yml.tmp mkdocs.yml
 RUN mkdocs build -s
