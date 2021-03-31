@@ -81,7 +81,7 @@ You will see command prompt and firmware build information:
 
 | Command | Description |
 | ------: | :------- |
-| `bt_info` | Outputs Bluetooth adapter info |
+| `bt_info` | Outputs Bluetooth subsystem info |
 
 ### Applications Launcher
 
