@@ -48,6 +48,7 @@ plugins:
   - search
   - git-revision-date-localized
   - macros
+  - smart-meta
 
 theme:
   name: material
