@@ -48,7 +48,7 @@ The screenshot should be 128*64 PNG with transparent background.
 1. Install additional utilities somehow: `yq`, `rsync`.
 2. Install packages:
 ```
-pip3 install mkdocs-material mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin
+pip3 install mkdocs-material mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin mkdocs-smart-meta-plugin
 ```
 3. Run `python3 ./serve.py` being in the root directory
 4. Proceed to `http://localhost:8000`
