@@ -22,6 +22,9 @@ extra:
       link: /ru/
       lang: ru
 
+extra_css:
+  - stylesheets/home.css
+
 extra_javascript:
   - javascripts/extra.js
 

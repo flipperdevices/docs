@@ -3,5 +3,31 @@
 <!-- Content -->
 {% block content %}
   {{ page.content }}
-  <!-- Homepage layout goes here -->
+
+  {% if nav|length>1 %}
+    <ul class="home-menu">
+    {% for nav_item in nav %}
+      {% if nav_item.children %}
+        <li>
+          <aside>
+            {{ '<img src="/assets/home/cover-%s.jpg">' % nav_item.title.replace(" ", "-").lower() }}
+          </aside>
+
+          <main>
+            <h2>{{ nav_item.title }}</h2>
+            <ul class="home-submenu">
+            {% for nav_item in nav_item.children %}
+              <li>
+              {% if nav_item.children %}
+                <a href="{{ nav_item.children[0].url|url }}">{{ nav_item.title }}</a>
+              {% endif %}
+              </li>
+            {% endfor %}
+            </ul>
+          </main>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endblock %}
