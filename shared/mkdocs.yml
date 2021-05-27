@@ -21,6 +21,45 @@ extra:
     - name: Русский
       link: /ru/
       lang: ru
+  home:
+    - 0:
+      img: quickstart.jpg
+      title:
+        en: Quick start
+        ru: Быстрый start
+      path: usage/general/first-boot
+      children:
+        - 0:
+          title:
+            en: First Boot
+            ru: First Boot
+          path: usage/general/first-boot
+        - 1:
+          title:
+            en: Rebooting
+            ru: Rebooting
+          path: usage/general/rebooting
+        - 2:
+          title:
+            en: Flashing Firmware
+            ru: Flashing Firmware
+          path: usage/general/flashing-firmware
+        - 3:
+          title:
+            en: Power
+            ru: Power
+          path: usage/applications/power
+    - 1:
+      img: sub1.jpg
+      title:
+        en: Sub-1 Ghz
+        ru: Sub-1 Ghz
+      children:
+        - 0:
+          title:
+            en: Circuit Diagrams
+            ru: Жопа Diagrams
+          path: development/hardware/devboard-stlinkV3
 
 extra_css:
   - stylesheets/home.css
