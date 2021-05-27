@@ -57,7 +57,18 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    primary: deep orange
+    - scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   logo: assets/logo.svg
   favicon: assets/favicon.png
   icon:
