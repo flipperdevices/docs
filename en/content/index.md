@@ -5,12 +5,6 @@ hide:
     - toc
 ---
 
-Welcome to the Flipper Zero Docsss.
-
-The main page is still in a WIP state.
-
-Use tabs and sidebar to navigate.
-
 <ul class="home-menu">
     {% for nav_item in config.extra.home %}
       <li>
