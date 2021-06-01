@@ -1,4 +1,4 @@
-FROM ghcr.io/squidfunk/mkdocs-material-insiders as builder
+FROM squidfunk/mkdocs-material as builder
 
 RUN apk add yq rsync --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 
