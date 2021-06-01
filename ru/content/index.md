@@ -15,7 +15,7 @@ hide:
     {% for nav_item in config.extra.home %}
       <li>
         <aside>
-          {{ '<img src="/assets/home/%s">' % nav_item.img }}
+          {{ '<img src="assets/home/%s">' % nav_item.img }}
         </aside>
 
         <main>
