@@ -4,13 +4,6 @@ hide:
     - navigation
     - toc
 ---
-
-Добро пожаловать в документацию Flipper Zero.
-
-Главная страница пока в разработке.
-
-Используйте вкладки и боковое меню для навигации.
-
 <ul class="home-menu">
     {% for nav_item in config.extra.home %}
       <li>
