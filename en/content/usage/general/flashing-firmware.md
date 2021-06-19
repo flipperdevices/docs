@@ -1,7 +1,7 @@
 ## Download latest firmware
 
 Click the image to download latest build of full firmware:
-[![](https://update.flipperzero.one/latest-firmware-banner.png){: width="400"}](https://update.flipperzero.one/master/full.dfu)
+[![](https://update.flipperzero.one/latest-firmware-banner.png){: width="400"}](https://update.flipperzero.one/release/full.dfu)
 
 ## Enter DFU Mode
 
