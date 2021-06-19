@@ -1,7 +1,7 @@
 ## Скачивание свежей прошивки
 
 Кликните на картинку, чтобы скачать свежую сборку полной прошивки:
-[![](https://update.flipperzero.one/latest-firmware-banner.png){: width="400"}](https://update.flipperzero.one/master/full.dfu)
+[![](https://update.flipperzero.one/latest-firmware-banner.png){: width="400"}](https://update.flipperzero.one/release/full.dfu)
 
 ## Вход в режим DFU
 
