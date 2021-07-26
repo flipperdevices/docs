@@ -54,12 +54,12 @@ You can run mkdocs server locally and render changes on the fly while editing.
 
 1. `brew install yq rsync`
 2. Install mkdocs insiders version if  you have a token:
-   `pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`
-   `pip3 install mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin mkdocs-smart-meta-plugin`
+   `pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`  
+   `pip3 install mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin mkdocs-smart-meta-plugin`  
 
 **OR** onstall public version
 
-   `pip3 install mkdocs-material mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin mkdocs-smart-meta-plugin`
+   `pip3 install mkdocs-material mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin mkdocs-smart-meta-plugin`  
 
 3. Run `python3 ./serve.py` being in the root directory
 4. Proceed to `http://localhost:8000`
