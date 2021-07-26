@@ -1,0 +1,4 @@
+{
+    "markdown-editor.useVscodeThemeColor": false,
+    "markdown-editor.imageSaveFolder": "${projectRoot}/shared/content/assets/images"
+}
