@@ -53,8 +53,10 @@ You can run mkdocs server locally and render changes on the fly while editing.
 ## macOS
 
 1. `brew install yq rsync`
-2. Install mkdocs insiders version if  you have a token:
+2. Install mkdocs insiders version if  you have a token:  
+   
    `pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git`  
+   
    `pip3 install mkdocs-macros-plugin mkdocs-git-revision-date-localized-plugin mkdocs-smart-meta-plugin`  
 
 **OR** onstall public version
